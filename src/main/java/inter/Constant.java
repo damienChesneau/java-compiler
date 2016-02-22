@@ -5,7 +5,7 @@ import symbols.*;
 
 /**
  *
- * @author Damien Chesneau - contact@damienchesneau.fr
+ * @author Damien Chesneau
  */
 public class Constant extends Expr {
 

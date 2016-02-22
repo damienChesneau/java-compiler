@@ -6,7 +6,7 @@ import parser.*;
 
 /**
  *
- * @author Damien Chesneau - contact@damienchesneau.fr
+ * @author Damien Chesneau
  */
 public class Main {
 

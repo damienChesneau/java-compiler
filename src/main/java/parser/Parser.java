@@ -7,7 +7,7 @@ import inter.*;
 
 /**
  *
- * @author Damien Chesneau - contact@damienchesneau.fr
+ * @author Damien Chesneau
  */
 public class Parser {
 
@@ -28,7 +28,7 @@ public class Parser {
     }
 
     void error(String s) {
-        throw new Error("near line " + lex.line + ": " + s);
+        throw new Error("near line " + Lexer.getLine() + ": " + s);
     }
 
     void match(int t) throws IOException {

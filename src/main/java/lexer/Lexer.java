@@ -1,16 +1,17 @@
 package lexer;
 
-import java.io.*;
-import java.util.*;
-import symbols.*;
+import symbols.Type;
+
+import java.io.IOException;
+import java.util.HashMap;
 
 /**
  *
- * @author Damien Chesneau - contact@damienchesneau.fr
+ * @author Damien Chesneau
  */
 public class Lexer {
 
-    public static int line = 1;
+    private static int line = 1;
     private char peek = ' ';
     private final HashMap<String, Word> words = new HashMap<>();
 
@@ -130,7 +131,11 @@ public class Lexer {
             return w;
         }
         Token tok = new Token(peek);
-        peek = ' ';
+        peek = ' ';// TO REFORMAT
         return tok;
+    }
+
+    public static int getLine() {
+        return line;
     }
 }
